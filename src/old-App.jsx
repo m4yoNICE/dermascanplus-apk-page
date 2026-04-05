@@ -56,38 +56,22 @@ const features = [
     image: "/landing_images/16785ad763f94491f0eb12aa6a7e4ba8a30f11d7.png",
     title: "Real-Time Scanning",
     tagline: "Get your skin scanned and be informed of your skin needs!",
-    desc: "Our AI-powered scan detects skin conditions, identifies severity, and gives you a detailed analysis with key ingredient recommendations — right from your phone.",
+    desc: "Our AI-powered scan gives you instant insights about hydration, oiliness, redness, and more — right from your phone.",
   },
   {
     image: "/landing_images/16785ad763f94491f0eb12aa6a7e4ba8a30f11d7 (1).png",
     title: "Personal Skin Journal",
     tagline: "Keep logs with your skin updates here in DermaScan+",
-    desc: "Write daily notes, log your mood, and keep track of how your skin feels day to day — all in one place.",
+    desc: "Track your skin's journey over time. Log treatments, see progress, and understand what works best for your skin.",
   },
-];
+]
 
 const steps = [
-  {
-    num: "01",
-    title: "Download the APK",
-    desc: "Grab the APK file directly — free to download and install in seconds.",
-  },
-  {
-    num: "02",
-    title: "Scan Your Skin",
-    desc: "Point your camera at your face — our AI analyzes your skin in seconds.",
-  },
-  {
-    num: "03",
-    title: "Get Your Report",
-    desc: "Receive a detailed breakdown of your skin health with tailored recommendations.",
-  },
-  {
-    num: "04",
-    title: "Track Progress",
-    desc: "Log entries over time and watch your skin health improve week by week.",
-  },
-];
+  { num: "01", title: "Download the APK", desc: "Grab the APK file directly — free to download and install in seconds." },
+  { num: "02", title: "Scan Your Skin", desc: "Point your camera at your face — our AI analyzes your skin in seconds." },
+  { num: "03", title: "Get Your Report", desc: "Receive a detailed breakdown of your skin health with tailored recommendations." },
+  { num: "04", title: "Track Progress", desc: "Log entries over time and watch your skin health improve week by week." },
+]
 
 export default function App() {
   return (
@@ -100,19 +84,11 @@ export default function App() {
             DermaScan<span className="logo-plus">+</span>
           </a>
           <ul className="nav-links">
-            <li>
-              <a href="#features">Features</a>
-            </li>
-            <li>
-              <a href="#how-it-works">How It Works</a>
-            </li>
-            <li>
-              <a href="#download">Download</a>
-            </li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#download">Download</a></li>
           </ul>
-          <a href="#download" className="nav-cta">
-            Get the App
-          </a>
+          <a href="#download" className="nav-cta">Get the App</a>
         </div>
       </nav>
 
@@ -122,14 +98,12 @@ export default function App() {
         <div className="hero-bg-circle hero-bg-circle--2" aria-hidden="true" />
         <div className="hero-content">
           <h1 className="hero-title">
-            Unlock Your
-            <br />
+            Unlock Your<br />
             <span className="hero-title-accent">Skin Story.</span>
           </h1>
           <p className="hero-sub">
-            DermaScan+ uses advanced AI to analyze your skin, track your health
-            journey, and guide you to your best complexion — all from your
-            phone.
+            DermaScan+ uses advanced AI to analyze your skin, track your health journey,
+            and guide you to your best complexion — all from your phone.
           </p>
           <div className="hero-actions">
             <a href="#download" className="btn-primary">
@@ -156,11 +130,8 @@ export default function App() {
                   <div className="phone-app-name">DermaScan+</div>
                   <p className="phone-tagline">{f.tagline}</p>
                   <div className="phone-dots">
-                    {[0, 1, 2].map((d) => (
-                      <span
-                        key={d}
-                        className={`dot${d === i ? " dot--active" : ""}`}
-                      />
+                    {[0, 1, 2].map(d => (
+                      <span key={d} className={`dot${d === i ? ' dot--active' : ''}`} />
                     ))}
                   </div>
                   <div className="phone-btn">Next</div>
@@ -175,15 +146,8 @@ export default function App() {
       <section id="features" className="features-section">
         <div className="section-inner">
           <div className="section-label">Features</div>
-          <h2 className="section-title">
-            Everything your skin needs,
-            <br />
-            in one place.
-          </h2>
-          <p className="section-sub">
-            Three powerful pillars that make DermaScan+ the most comprehensive
-            skin health companion available.
-          </p>
+          <h2 className="section-title">Everything your skin needs,<br />in one place.</h2>
+          <p className="section-sub">Three powerful pillars that make DermaScan+ the most comprehensive skin health companion available.</p>
           <div className="features-grid">
             {features.map((f, i) => (
               <div key={i} className="feature-card">
@@ -207,13 +171,11 @@ export default function App() {
               "AI-powered recommendations",
               "Daily skin tracking",
               "Personalized routines",
-              "Scan history & condition logs",
-              "Morning & night routine scheduler",
+              "Progress photos",
+              "No account needed to scan",
             ].map((cap) => (
               <li key={cap} className="cap-item">
-                <span className="cap-check">
-                  <CheckIcon />
-                </span>
+                <span className="cap-check"><CheckIcon /></span>
                 {cap}
               </li>
             ))}
@@ -226,10 +188,7 @@ export default function App() {
         <div className="section-inner">
           <div className="section-label">How It Works</div>
           <h2 className="section-title">Glowing skin in four steps.</h2>
-          <p className="section-sub">
-            Getting started takes less than 2 minutes. Create a free account and
-            start scanning right away.
-          </p>
+          <p className="section-sub">Getting started takes less than 2 minutes. No account required to scan.</p>
           <div className="steps-grid">
             {steps.map((s) => (
               <div key={s.num} className="step-card">
@@ -248,27 +207,17 @@ export default function App() {
           <div className="download-bg-circle" aria-hidden="true" />
           <div className="download-content">
             <div className="download-icons" aria-hidden="true">
-              <span className="dl-icon-wrap">
-                <ScanCircleIcon />
-              </span>
-              <span className="dl-icon-wrap">
-                <SparkleIcon />
-              </span>
-              <span className="dl-icon-wrap">
-                <LogIcon />
-              </span>
+              <span className="dl-icon-wrap"><ScanCircleIcon /></span>
+              <span className="dl-icon-wrap"><SparkleIcon /></span>
+              <span className="dl-icon-wrap"><LogIcon /></span>
             </div>
             <h2 className="download-title">Start your skin journey today.</h2>
             <p className="download-sub">
-              Download DermaScan+ for free — install the APK, create an account,
-              and start your skin journey in minutes.
+              Download DermaScan+ for free — just install the APK and you&apos;re good to go.
+              Join over 50,000 people who&apos;ve already unlocked their skin story.
             </p>
             <div className="download-btns">
-              <a
-                href="/dermascan-plus.apk"
-                download
-                className="dl-btn dl-btn--apk"
-              >
+              <a href="/dermascan-plus.apk" download className="dl-btn dl-btn--apk">
                 <DownloadIcon />
                 <div className="dl-btn-text">
                   <span className="dl-btn-small">Direct download</span>
@@ -276,10 +225,7 @@ export default function App() {
                 </div>
               </a>
             </div>
-            <p className="download-fine">
-              Free · Account required · Enable &quot;Install from unknown
-              sources&quot; in your device settings
-            </p>
+            <p className="download-fine">Free · No account required · Enable &quot;Install from unknown sources&quot; in your device settings</p>
           </div>
         </div>
       </section>
@@ -320,5 +266,5 @@ export default function App() {
         </div>
       </footer>
     </div>
-  );
+  )
 }
