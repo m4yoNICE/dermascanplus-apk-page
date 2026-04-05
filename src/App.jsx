@@ -265,7 +265,7 @@ export default function App() {
             </p>
             <div className="download-btns">
               <a
-                href="/dermascan-plus.apk"
+                href="https://expo.dev/artifacts/eas/h6dQqUuWG9xLLUpq6rDVzJ.apk"
                 download
                 className="dl-btn dl-btn--apk"
               >
