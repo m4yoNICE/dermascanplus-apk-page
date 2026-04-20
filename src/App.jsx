@@ -265,7 +265,7 @@ export default function App() {
             </p>
             <div className="download-btns">
               <a
-                href="https://expo.dev/artifacts/eas/4avRhqCfDz1tcFNyrpvPcn.apk"
+                href="https://expo.dev/artifacts/eas/pNCC16v69d2Pj56WbD4jqP.apk"
                 download
                 className="dl-btn dl-btn--apk"
               >
