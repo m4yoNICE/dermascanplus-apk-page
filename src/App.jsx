@@ -198,6 +198,52 @@ export default function App() {
         </div>
       </section>
 
+      {/* PHONE MOCKUP */}
+      <section className="phone-mockup-section">
+        <div className="section-inner">
+          <div className="section-label">See It In Action</div>
+          <h2 className="section-title">
+            Your skin analysis,
+            <br />
+            right from your camera.
+          </h2>
+          <div className="mockup-phones">
+            {/* Phone 1 — Camera */}
+            <div className="mockup-phone-wrap">
+              <p className="mockup-phone-label">Scan</p>
+              <div className="mockup-phone-frame">
+                <div className="mockup-phone-notch" />
+                <div className="mockup-phone-screen">
+                  <img
+                    src="/landing_images/camera.png"
+                    alt="Camera scan screen"
+                    className="mockup-screen-img"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Divider arrow */}
+            <div className="mockup-arrow">→</div>
+
+            {/* Phone 2 — Recommendation */}
+            <div className="mockup-phone-wrap">
+              <p className="mockup-phone-label">Results</p>
+              <div className="mockup-phone-frame">
+                <div className="mockup-phone-notch" />
+                <div className="mockup-phone-screen">
+                  <img
+                    src="/landing_images/recommendation.png"
+                    alt="Recommendation screen"
+                    className="mockup-screen-img"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CAPABILITIES BANNER */}
       <section className="capabilities-section">
         <div className="section-inner">
@@ -264,21 +310,16 @@ export default function App() {
               and start your skin journey in minutes.
             </p>
             <div className="download-btns">
-              <a
-                href="https://expo.dev/artifacts/eas/edMaQ5dY8XV9gt6ZjzKJrm.apk"
-                download
-                className="dl-btn dl-btn--apk"
-              >
+              <button disabled className="dl-btn dl-btn--apk">
                 <DownloadIcon />
                 <div className="dl-btn-text">
-                  <span className="dl-btn-small">Direct download</span>
+                  <span className="dl-btn-small">Currently unavailable</span>
                   <span className="dl-btn-big">Download APK</span>
                 </div>
-              </a>
+              </button>
             </div>
             <p className="download-fine">
-              Free · Account required · Enable &quot;Install from unknown
-              sources&quot; in your device settings
+              App is currently offline — download unavailable.
             </p>
           </div>
         </div>
